@@ -43,6 +43,7 @@ class TaskNode(BaseModel):
     is_complex: bool = False
     tool_calls: list[ToolCallRecord] = Field(default_factory=list)
     requires_data: bool = True  # Whether this task requires external data to be meaningful
+    has_tool_failures: bool = False  # Set True if task completed but had critical tool failures
 
     def has_critical_tool_failures(self) -> bool:
         """Check if this task has critical tool failures that prevent meaningful completion."""
@@ -87,8 +88,19 @@ class TaskDAG(BaseModel):
         return self.tasks.get(task_id)
 
     def get_ready_tasks(self) -> list[TaskNode]:
-        """Get all tasks that are ready to execute (dependencies satisfied)."""
+        """Get all tasks that are ready to execute (dependencies satisfied).
+
+        Tasks are NOT ready if any dependency has critical tool failures,
+        preventing downstream hallucination when upstream data acquisition failed.
+        """
         ready = []
+
+        # Identify tasks with critical failures (completed but with tool failures)
+        failed_completion_ids = {
+            tid for tid, t in self.tasks.items()
+            if t.status == TaskStatus.COMPLETED and t.has_tool_failures
+        }
+
         completed_or_skipped = {
             tid
             for tid, t in self.tasks.items()
@@ -97,6 +109,10 @@ class TaskDAG(BaseModel):
 
         for task in self.tasks.values():
             if task.status != TaskStatus.PENDING:
+                continue
+
+            # Block if any dependency has critical failures
+            if any(dep_id in failed_completion_ids for dep_id in task.depends_on):
                 continue
 
             deps_satisfied = all(

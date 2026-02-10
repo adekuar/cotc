@@ -61,6 +61,17 @@ class ResultAggregator:
                 "type": "tool_failures",
             })
 
+        # Get tasks skipped due to upstream critical failures
+        for task in dag.tasks.values():
+            if task.status == TaskStatus.SKIPPED and task.error and "upstream" in task.error.lower():
+                failures.append({
+                    "task_id": task.id,
+                    "task_name": task.name,
+                    "prompt": task.prompt,
+                    "error": task.error,
+                    "type": "blocked_by_failure",
+                })
+
         return failures
 
     def _generate_help_request(self, dag: TaskDAG, failures: list[dict[str, Any]]) -> str:
@@ -85,6 +96,8 @@ class ResultAggregator:
                 lines.append("**Failed operations:**")
                 for tool_failure in failure.get("failed_tools", []):
                     lines.append(f"  - {tool_failure['tool']}: {tool_failure['error']}")
+            elif failure["type"] == "blocked_by_failure":
+                lines.append(f"**Status:** Skipped - {failure.get('error', 'blocked by upstream failure')}")
 
         lines.extend([
             "",

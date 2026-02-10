@@ -1,0 +1,2119 @@
+End-of-Day Historical Stock Market Data API: The Best Web Service Offering a Free Trial, Providing Real-Time, JSON-Formatted Data Available for Download
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+	
+
+
+	
+
+
+    
+        
+    Options Data for US Stocks: End-of-Day and Historical
+    Learn more
+
+    
+
+
+
+
+
+    
+        
+            
+                
+                    
+                        
+                    
+                    
+                        
+                    
+                
+
+            
+            
+            
+    
+        
+            API Docs
+        
+        
+            
+                
+                    Fundamental API
+                
+                
+                    Live OHLCV Data
+                
+                
+                    EOD Historical API
+                
+                
+                    Options (US Stocks) API
+                
+                
+                    Intraday API
+                
+                
+                    Real-Time (Websockets) API
+                
+                
+                    Financial News API
+                
+                
+                    Delisted Data API
+                
+                
+                    More APIs
+                    
+                        
+                    
+                
+            
+
+        
+
+    
+
+    
+        Solutions
+        
+            
+                
+                    
+                        
+                    
+                    New & Popular APIs
+                
+
+                
+                    Fundamental Data APIs
+                
+                
+                    Historical End-of-Day API
+                
+                
+                    US Stock Options Data API
+                
+                
+                    Real-time Prices API
+                
+                
+                    Financial Events & News API
+                
+                
+                    Indices Historical Constituents API
+                
+                
+                    40 000 Stock Market Logos API
+                
+                
+                    Forex Data APIs
+                
+                
+                    More APIs
+                    
+                        
+                    
+                
+            
+
+            
+                
+                    
+                        
+                    
+                    Tools
+                
+
+                
+                    EOD Data Downloader (FTP Alternative)
+                
+                
+                    EODHD ChatGPT Assistant
+                
+                
+                    Forex Tools & Converter
+                
+                
+                    Google Sheets Add-on
+                
+                
+                    Excel Add-on
+                
+                
+                    Coding Libraries (Python, R, etc)
+                
+                
+                    Wordpress Add-on
+                
+            
+
+        
+
+    
+
+    
+        B2B
+        
+            
+                
+                    Pricing (Commercial Use)
+                
+                
+                    Investment Platform
+                
+                
+                    For Universities
+                
+                
+                    Investor Relations Page Creator
+                
+                
+                    Business Solutions
+                
+            
+
+        
+
+    
+
+    
+        API Marketplace
+    
+    
+        Community
+        
+            
+                
+                    Academy 158 articles
+                
+                
+                    Reddit 
+                
+                
+                    Github 13 repos
+                
+                
+                    Medium +1 new post
+                
+            
+
+        
+
+    
+
+    
+        Pricing
+        
+            
+                
+                    Personal Use
+                
+                
+                    Commercial Use
+                
+            
+
+        
+
+    
+
+
+
+                            
+                    
+                        
+                    
+                    
+                        Sign up
+                    
+                
+
+                    
+    
+
+
+
+
+	
+
+
+
+ 
+
+
+
+    
+
+    
+        
+            Full Documentation
+        
+
+        
+            
+    
+
+            
+        
+    
+        
+            
+            1. Market Data APIs        
+
+                    
+                            
+
+                                            
+                            
+                                Live v2 for US Stocks: Extended Quotes (2025)                            
+                        
+
+                                            
+                            
+                                End-Of-Day Historical Stock Market Data API                            
+                        
+
+                                            
+                            
+                                Tick Data API: US Stock Market                            
+                        
+
+                                            
+                            
+                                Real-Time Data API via Websockets: US Stocks, Forex pairs, Digital Currencies                            
+                        
+
+                                            
+                            
+                                Intraday Historical Stock Price Data API                            
+                        
+
+                                            
+                            
+                                Live OHLCV Stock Prices API: US & Global Stocks, Currencies                            
+                        
+
+                                            
+                            
+                                Corporate Actions: Splits and Dividends API                            
+                        
+
+                                            
+                            
+                                Stock Market Screener API                            
+                        
+
+                                            
+                            
+                                Delisted Stock Companies Data                            
+                        
+
+                                            
+                            
+                                Technical Analysis Indicators API                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            2. Fundamental & Economic Data        
+
+                    
+                            
+
+                                            
+                            
+                                Bulk Fundamentals API (via Extended Fundamentals Plan)                            
+                        
+
+                                            
+                            
+                                Fundamental Data: Stocks, ETFs, Mutual Funds, Indices                            
+                        
+
+                                            
+                            
+                                Fundamental Data: Cryptocurrencies                            
+                        
+
+                                            
+                            
+                                S&P and Dow Jones: Indices Historical Constituents Data API                            
+                        
+
+                                            
+                            
+                                ESG Data API                            
+                        
+
+                                            
+                            
+                                40 000 Stock Market Logos API                            
+                        
+
+                                            
+                            
+                                Historical Market Capitalization (Marketcap) API                            
+                        
+
+                                            
+                            
+                                Insider Transactions API (Sec "Form 4")                            
+                        
+
+                                            
+                            
+                                Calendar API: Upcoming Dividends, Earnings, Trends, IPOs and Splits                            
+                        
+
+                                            
+                            
+                                Exchanges API: Trading Hours, Stock Market Holidays, Symbols Change History.                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            3. Exchange & Instruments Info        
+
+                    
+                            
+
+                                            
+                            
+                                ID Mapping API: CUSIP / ISIN / FIGI / LEI / CIK ↔ Symbol                            
+                        
+
+                                            
+                            
+                                List of Supported Tickers: API for All Asset Classes                            
+                        
+
+                                            
+                            
+                                List of Supported Crypto Currencies                            
+                        
+
+                                            
+                            
+                                List of Supported FOREX Currencies                            
+                        
+
+                                            
+                            
+                                Exchanges API: Get List of Supported Exchanges                            
+                        
+
+                                            
+                            
+                                Exchanges API: Trading Hours, Stock Market Holidays, Symbols Change History.                            
+                        
+
+                                            
+                            
+                                Search API for Stocks, ETFs, Mutual Funds, and Indices                            
+                        
+
+                                            
+                            
+                                Bulk API for EOD, Splits and Dividends                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            4. Alternative & Derived Data        
+
+                    
+                            
+
+                                            
+                            
+                                US Treasury (UST) Interest Rates API (beta)                            
+                        
+
+                                            
+                            
+                                CBOE Europe Indices API (beta)                            
+                        
+
+                                            
+                            
+                                US Stock Options Chains with Greeks (EOD)                            
+                        
+
+                                            
+                            
+                                Economic Events Data API                            
+                        
+
+                                            
+                            
+                                Financial News Feed and Stock News Sentiment data API                            
+                        
+
+                                            
+                            
+                                Macro Indicators API                            
+                        
+
+                                            
+                            
+                                Macroeconomic Data API                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            5. Developer Tools & Examples        
+
+                    
+                            
+
+                                            
+                            
+                                EODHDSignals: Telegram Bot User Guide                            
+                        
+
+                                            
+                            
+                                MCP Server For Financial Data by EODHD                            
+                        
+
+                                            
+                            
+                                R Library v.2 for Financial Data (2024)                            
+                        
+
+                                            
+                            
+                                R Library for Financial Data                            
+                        
+
+                                            
+                            
+                                Power Bi Connector for Financial Data APIs                            
+                        
+
+                                            
+                            
+                                Postman Financial Data API Collection                            
+                        
+
+                                            
+                            
+                                NinjaTrader Adapter for EOD Intraday and Fundamental Data                            
+                        
+
+                                            
+                            
+                                Python Financial Library: Installation, Functions, Examples                            
+                        
+
+                                            
+                            
+                                XLQ2 Integration                            
+                        
+
+                                            
+                            
+                                Matlab API Connector and Example                            
+                        
+
+                                            
+                            
+                                CURL & WGET Stock API Examples                            
+                        
+
+                                            
+                            
+                                C# .NET Financial API Stock Wrapper                            
+                        
+
+                                            
+                            
+                                F Sharp (F#) Stock API Example                            
+                        
+
+                                            
+                            
+                                PHP/Laravel Example                            
+                        
+
+                                            
+                            
+                                Java Stock API Example                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            6. No-Code Tools        
+
+                    
+                            
+
+                                            
+                            
+                                EODHD Chat GPT Assistant (Code generation)                            
+                        
+
+                                            
+                            
+                                Spreadsheets for Stocks, ETFs, Mutual Funds, Forex pairs and more                            
+                        
+
+                                            
+                            
+                                Google Sheets Finance Data Add-on                            
+                        
+
+                                            
+                            
+                                Financial Excel Add-on For Historical, EOD, Intraday & Fundamental data. Video tutorial                            
+                        
+
+                                            
+                            
+                                WordPress Financial Stock Market Data Plugin                            
+                        
+
+                                            
+                            
+                                Real-Time Stocks Prices Data Bar and Crypto Currency Converter Chrome Extension                             
+                        
+
+                                            
+                            
+                                Windows and Linux Downloaders for End Of Day Data                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+            
+        
+    
+        
+            
+            7. Other Articles        
+
+                    
+                            
+
+                                            
+                            
+                                User API                            
+                        
+
+                                            
+                            
+                                API Limits: calls, requests, consumption                            
+                        
+
+                                            
+                            
+                                QUICK START with our Financial Data APIs                            
+                        
+
+                                            
+                            
+                                Our Data Sources and Data Partners                            
+                        
+
+                                            
+                            
+                                Commercial vs Personal license use                            
+                        
+
+                                            
+                            
+                                Cookie Policy                            
+                        
+
+                                            
+                            
+                                Privacy Policy                            
+                        
+
+                                            
+                            
+                                Terms and Conditions                            
+                        
+
+                    
+                    
+                
+        
+        
+
+
+    
+    
+        
+
+    
+
+
+    
+
+Do you need access to more data?
+
+
+
+See our plans
+
+
+
+Sign up for a free plan now
+
+No credit card is required
+
+Get free API key
+
+
+
+
+
+
+
+
+
+			
+
+				
+											
+							  							
+						
+
+					
+				
+											
+							Facebook  							
+						
+
+					
+				
+											
+							X  							
+						
+
+					
+				
+											
+							Reddit  							
+						
+
+					
+				
+											
+							Medium  							
+						
+
+					
+				
+			
+
+			
+
+    
+        
+            
+        
+        
+            
+        
+        
+            
+        
+        
+            
+        
+    
+
+
+
+  
+  
+  
+  
+    
+        
+            
+                
+                    
+                
+            
+            
+            
+            
+        
+        
+
+        
+            
+
+        
+
+        
+
+    
+
+
+
+	  
+
+
+    Home/Documentation/1. Market Data APIs /End-Of-Day Historical Stock Market Data API
+	
+		End-Of-Day Historical Stock Market Data API
+
+        	
+
+
+
+
+
+            Product Landing Page
+    
+            Coding Libraries (Python, etc)
+        Explore Plans Including the API
+        Sign up & Get the API
+            
+                            
+                    Available in plans: All-In-One, EOD Historical Data: All World, EOD + Intraday: All World Extended, Free plan (limited).
+                    Explore plans
+                
+
+                                        
+                    Available via no-code tools:  
+        Excel add-on
+    , 
+    
+        Google Sheets add-on
+    , 
+    
+        ChatGPT assistant
+    
+                
+
+                                        
+                    API calls consumption: 1 call per request (any length of price history).                
+
+                
+                    How does API call system work?
+                
+                    
+
+    
+
+ 
+
+  	  
+  	
+
+
+  
+
+				  
+         
+        
+        
+          
+With End-of-Day data API, we have data for more than 150 000 tickers all around the world. We cover all US stocks, ETFs, and Mutual Funds (more than 51 000 in total) from the beginning, for example, the Ford Motors data is from Jun 1972 and so on. And non-US stock exchanges we cover mostly from Jan 3, 2000. We do provide daily, weekly and monthly data raw and adjusted to splits and dividends.
+
+
+
+
+Note. Free plan gives access to 1 year of historical depth for EOD data only.
+
+
+
+
+Quick jump:
+1 Quick Start
+2 Daily Updates API
+3 Stock Prices Data API with Dates Support3.1 EOD Historical Data
+3.2 Filter fields. WEBSERVICE and YAHOO Support
+3.3 Yahoo Finance API Support
+3.4 JSON Output Support
+
+4 End Of Day Historical Prices Update Time
+
+
+
+
+
+
+Quick Start
+
+
+
+
+
+    
+        
+            
+                
+            
+            Test Drive with "DEMO" Key
+        
+
+        
+            
+                You can start with “DEMO” API key to test the data for a few tickers only: 
+                AAPL.US,
+                TSLA.US,
+                VTI.US, 
+                AMZN.US, 
+                BTC-USD.CC
+                and
+                EURUSD.FOREX.
+                For these tickers,
+                all of our types of data (APIs),
+                including
+                Real-Time Data,
+                are available without limitations.
+            
+
+            
+                Register for the free plan to receive your API key (limited to 20 API calls per day) with access to
+                End-Of-Day Historical Stock Market Data API
+                for any ticker, but within the past year only. Plus a 
+                List of tickers per Exchange
+                is available.
+            
+
+            
+                We recommend to explore
+                our plans,
+                starting from $19.99, to access the necessary type of data without limitations.
+            
+
+        
+    
+
+
+
+
+
+To get historical stock price data use the following URL:
+
+
+
+
+
+    
+                    
+                                    URL
+
+                                    cURL
+
+                                    PHP
+
+                                    Python
+
+                                    R
+
+                                Chat GPT
+
+            
+
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/eod/MCD.US?api_token=demo&fmt=json
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    curl --location "https://eodhd.com/api/eod/MCD.US?api_token=demo&fmt=json"
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://eodhd.com/api/eod/MCD.US?api_token=demo&fmt=json',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$data = curl_exec($curl);
+curl_close($curl);
+
+try {
+    $data = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
+    var_dump($data);
+} catch (Exception $e) {
+    echo 'Error. '.$e->getMessage();
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+import requests
+
+url = f'https://eodhd.com/api/eod/MCD.US?api_token=demo&fmt=json'
+data = requests.get(url).json()
+
+print(data)
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+library(httr)
+library(jsonlite)
+
+url <- 'https://eodhd.com/api/eod/MCD.US?api_token=demo&fmt=json'
+response <- GET(url)
+
+if (http_type(response) == "application/json") {
+    content <- content(response, "text", encoding = "UTF-8")
+    cat(content)
+} else {
+    cat("Error while receiving data\n")
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+        
+
+    
+
+
+    
+
+
+
+
+MCD.US consists of two parts: {SYMBOL_NAME}.{EXCHANGE_ID}, then you can use, for example, MCD.MX for Mexican Stock Exchange. or MCD.US for NYSE.
+
+
+
+
+api_token – your own API KEY, which you will get after you subscribe to our services.
+
+
+
+
+fmt – the output format. Possible values are ‘csv’ for CSV output and ‘json’ for JSON output. Default value: ‘csv’.
+
+
+
+
+period – use ‘d’ for daily, ‘w’ for weekly, ‘m’ for monthly prices. By default, daily prices will be shown. Data aggregated weekly and monthly also shows weekly and monthly volume.
+
+
+
+
+order – use ‘a’ for ascending dates (from old to new), ‘d’ for descending dates (from new to old). By default, dates are shown in ascending order.
+
+
+
+
+from and to – the format is ‘YYYY-MM-DD’. If you need data from Jan 5, 2017, to Feb 10, 2017, you should use from=2017-01-05 and to=2017-02-10.
+
+
+
+
+
+For testing purposes, you can try the following API Key (works only for MCD.US ticker):  demo
+
+
+
+
+
+    
+                    
+                                    URL
+
+                                    cURL
+
+                                    PHP
+
+                                    Python
+
+                                    R
+
+                                Chat GPT
+
+            
+
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/eod/MCD.US?period=d&api_token=demo&fmt=csv
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    curl --location "https://eodhd.com/api/eod/MCD.US?period=d&api_token=demo&fmt=csv"
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://eodhd.com/api/eod/MCD.US?period=d&api_token=demo&fmt=csv',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$data = curl_exec($curl);
+curl_close($curl);
+
+echo $data;
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+import requests
+
+url = f'https://eodhd.com/api/eod/MCD.US?period=d&api_token=demo&fmt=csv'
+data = requests.get(url).content
+
+print(data)
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+library(httr)
+library(jsonlite)
+
+url <- 'https://eodhd.com/api/eod/MCD.US?period=d&api_token=demo&fmt=csv'
+response <- GET(url)
+
+if (http_type(response) == "application/csv") {
+    content <- content(response, "text", encoding = "UTF-8")
+    cat(content)
+} else {
+    cat("Error while receiving data\n")
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+        
+
+    
+
+
+    
+
+
+
+As a result, you will get the following data in CSV format:
+
+
+
+
+
+
+
+
+
+
+Please note, that OHLC we provide in raw adjusted neither to splits nor to dividends, while adjusted closes are adjusted to both splits and dividends, and volume is adjusted to splits. If you need OHLC adjusted only to splits then it’s better to use our Technical API with the ‘function=splitadjusted’ parameter.
+
+
+
+
+
+
+
+
+
+
+Sign up & Get Data
+
+
+
+
+Daily Updates API
+
+
+
+
+For daily updates on your end-of-day data, we recommend a special Bulk API for EOD, Splits and Dividends. With this API you will be able to download the data for a particular day for the entire exchange in seconds. Even to download the entire US exchange with more than 45,000 active tickers, you will need 1 API request and 5-10 seconds.
+
+
+
+
+Stock Prices Data API with Dates Support
+
+
+
+
+We support two formats for historical data dates.
+
+
+
+
+EOD Historical Data
+
+
+
+
+Here you can use ‘from’ and ‘to’ parameters with the format ‘YYYY-MM-DD’. For example, if you need to get data only from Jan 5, 2017, to Feb 10, 2017, you need to use from=2017-01-05 and to=2017-02-10. Then the final URL will be:
+
+
+
+
+
+    
+                    
+                                    URL
+
+                                    cURL
+
+                                    PHP
+
+                                    Python
+
+                                    R
+
+                                Chat GPT
+
+            
+
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/eod/MCD.US?from=2020-01-05&to=2020-02-10&period=d&api_token=demo&fmt=json
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    curl --location "https://eodhd.com/api/eod/MCD.US?from=2020-01-05&to=2020-02-10&period=d&api_token=demo&fmt=json"
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://eodhd.com/api/eod/MCD.US?from=2020-01-05&to=2020-02-10&period=d&api_token=demo&fmt=json',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$data = curl_exec($curl);
+curl_close($curl);
+
+try {
+    $data = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
+    var_dump($data);
+} catch (Exception $e) {
+    echo 'Error. '.$e->getMessage();
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+import requests
+
+url = f'https://eodhd.com/api/eod/MCD.US?from=2020-01-05&to=2020-02-10&period=d&api_token=demo&fmt=json'
+data = requests.get(url).json()
+
+print(data)
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+library(httr)
+library(jsonlite)
+
+url <- 'https://eodhd.com/api/eod/MCD.US?from=2020-01-05&to=2020-02-10&period=d&api_token=demo&fmt=json'
+response <- GET(url)
+
+if (http_type(response) == "application/json") {
+    content <- content(response, "text", encoding = "UTF-8")
+    cat(content)
+} else {
+    cat("Error while receiving data\n")
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+        
+
+    
+
+
+    
+
+
+
+Filter fields. WEBSERVICE and YAHOO Support
+
+
+
+
+We also support ‘=WEBSERVICE’ Excel function, to get only the last value, just add ‘filter=last_close’ or ‘filter=last_volume’ with ‘fmt=json’ and you will get only one number which perfectly works with WEBSERVICE function. For example, with this URL:
+
+
+
+
+
+    
+                    
+                                    URL
+
+                                    cURL
+
+                                    PHP
+
+                                    Python
+
+                                    R
+
+                                Chat GPT
+
+            
+
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/eod/MCD.US?filter=last_close&api_token=demo&fmt=json
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    curl --location "https://eodhd.com/api/eod/MCD.US?filter=last_close&api_token=demo&fmt=json"
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://eodhd.com/api/eod/MCD.US?filter=last_close&api_token=demo&fmt=json',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$data = curl_exec($curl);
+curl_close($curl);
+
+try {
+    $data = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
+    var_dump($data);
+} catch (Exception $e) {
+    echo 'Error. '.$e->getMessage();
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+import requests
+
+url = f'https://eodhd.com/api/eod/MCD.US?filter=last_close&api_token=demo&fmt=json'
+data = requests.get(url).json()
+
+print(data)
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+library(httr)
+library(jsonlite)
+
+url <- 'https://eodhd.com/api/eod/MCD.US?filter=last_close&api_token=demo&fmt=json'
+response <- GET(url)
+
+if (http_type(response) == "application/json") {
+    content <- content(response, "text", encoding = "UTF-8")
+    cat(content)
+} else {
+    cat("Error while receiving data\n")
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+        
+
+    
+
+
+    
+
+
+
+You will get one value – the last price for MCD.
+
+
+
+
+Yahoo Finance API Support
+
+
+
+
+To support clients who used Yahoo Finance service non-official API which doesn’t work now (URL: ichart.finance.yahoo.com), we also support yahoo-style for dates. Here there will be 6 parameters.
+
+
+
+
+
+First of all, for yahoo-style you need to use another endpoint:
+
+
+
+
+https://eodhd.com/api/table.csv.
+
+
+
+
+For symbol you should use s, then for MCD it will be: s=MCD.US.
+
+
+
+
+For ‘from date’ you should use a, b, c for month, day, year. Then 2017-01-05 will be: a=00, b=05, c=2017.
+
+
+
+
+For ‘to date’ you should use d, e, f for month, day, year. Then 2017-02-10 will be: d=01, e=10, f=2017.
+
+
+
+
+Please note, that in Yahoo! Finance API first month is 0 and last month (December) is 11. Then you need to substract 1 from months.
+
+
+
+
+For ‘period’ you should use g. Possible values are d for daily, w for weekly and m for montly.
+
+
+
+
+
+BE CAREFUL, date used here in American notation: MONTH, DAY, YEAR.
+
+
+
+
+And the final URL will be:
+
+
+
+
+
+    
+                    
+                                    URL
+
+                                    cURL
+
+                                    PHP
+
+                                    Python
+
+                                    R
+
+                                Chat GPT
+
+            
+
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/table.csv?s=MCD.US&a=05&b=01&c=2017&d=10&e=02&f=2017&g=d&api_token=demo&fmt=json
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    curl --location "https://eodhd.com/api/table.csv?s=MCD.US&a=05&b=01&c=2017&d=10&e=02&f=2017&g=d&api_token=demo&fmt=json"
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://eodhd.com/api/table.csv?s=MCD.US&a=05&b=01&c=2017&d=10&e=02&f=2017&g=d&api_token=demo&fmt=json',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$data = curl_exec($curl);
+curl_close($curl);
+
+try {
+    $data = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
+    var_dump($data);
+} catch (Exception $e) {
+    echo 'Error. '.$e->getMessage();
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+import requests
+
+url = f'https://eodhd.com/api/table.csv?s=MCD.US&a=05&b=01&c=2017&d=10&e=02&f=2017&g=d&api_token=demo&fmt=json'
+data = requests.get(url).json()
+
+print(data)
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                            
+                    
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    
+library(httr)
+library(jsonlite)
+
+url <- 'https://eodhd.com/api/table.csv?s=MCD.US&a=05&b=01&c=2017&d=10&e=02&f=2017&g=d&api_token=demo&fmt=json'
+response <- GET(url)
+
+if (http_type(response) == "application/json") {
+    content <- content(response, "text", encoding = "UTF-8")
+    cat(content)
+} else {
+    cat("Error while receiving data\n")
+}
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+        
+
+    
+
+
+    
+
+
+
+We hope it will be very useful for you.
+
+
+
+
+JSON Output Support
+
+
+
+
+We support JSON output as well if you need it for your PHP, Python, Java, or Perl applications. All you need is to add a special parameter: “fmt=json” to your query, then the final query will be:
+
+
+
+
+
+    
+                
+                                            
+                    
+                                                    
+                                
+                                    
+                                
+                            
+                                                
+                            
+                                
+                            
+                        
+                    
+
+                    https://eodhd.com/api/eod/MCD.US?from=2017-01-05&to=2017-02-10&period=d&api_token=demo&fmt=json
+                    
+                        (Sign up for free to get an API token)
+                    
+
+                
+
+                                                                                        
+                
+                    
+                        
+                            
+                        
+                    
+                
+
+                
+                    New to coding? Our ChatGPT assistant can generate code in any language tailored to our API.
+                    Simply describe how you want to use our data, and get a working piece of code.
+                    Don’t forget to replace the API token with your own.
+                    Try it now (it's free)!
+                    
+                        How to use it (YouTube)
+                    
+                
+
+            
+
+   

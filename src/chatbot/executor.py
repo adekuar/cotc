@@ -78,6 +78,15 @@ class DAGExecutor:
         while not dag.all_tasks_done():
             ready_tasks = dag.get_ready_tasks()
 
+            # Handle tasks blocked by upstream critical failures
+            blocked_tasks = self._get_tasks_blocked_by_failures(dag)
+            for task in blocked_tasks:
+                task.status = TaskStatus.SKIPPED
+                task.error = "Blocked: upstream task had critical tool failures"
+                skipped.add(task.id)
+                logger.warning(f"Task {task.id} skipped due to upstream critical failures")
+                self._mark_dependents_skipped(dag, task.id, skipped)
+
             if not ready_tasks and not dag.all_tasks_done():
                 logger.warning("Deadlock detected: no tasks ready but DAG not complete")
                 break
@@ -206,7 +215,19 @@ class DAGExecutor:
 
                 # If no tool calls, we're done
                 if not response.tool_calls:
-                    return ExecutionResult(success=True, value=response.content or "")
+                    result_value = response.content or ""
+
+                    # Check if task has critical tool failures and set the flag
+                    if task.has_critical_tool_failures():
+                        task.has_tool_failures = True
+                        failed_tools = [
+                            tc.name for tc in task.tool_calls
+                            if tc.result and not tc.result.get("success", False)
+                        ]
+                        failure_note = f"\n\n[WARNING: Critical tool failures occurred. Failed tools: {', '.join(failed_tools)}]"
+                        result_value += failure_note
+
+                    return ExecutionResult(success=True, value=result_value)
 
                 # Add assistant message with tool calls
                 assistant_msg: dict[str, Any] = {"role": "assistant", "content": response.content}
@@ -257,15 +278,40 @@ class DAGExecutor:
                 # Continue loop - LLM will process tool results
 
             # If we exit the loop due to max tool calls, return what we have
-            return ExecutionResult(
-                success=True,
-                value=response.content or "Task completed (max tool calls reached)",
-            )
+            result_value = response.content or "Task completed (max tool calls reached)"
+
+            # Check if task has critical tool failures and set the flag
+            if task.has_critical_tool_failures():
+                task.has_tool_failures = True
+                failed_tools = [
+                    tc.name for tc in task.tool_calls
+                    if tc.result and not tc.result.get("success", False)
+                ]
+                failure_note = f"\n\n[WARNING: Critical tool failures occurred. Failed tools: {', '.join(failed_tools)}]"
+                result_value += failure_note
+
+            return ExecutionResult(success=True, value=result_value)
 
         except asyncio.TimeoutError:
             return ExecutionResult(success=False, error="Task execution timed out")
         except Exception as e:
             return ExecutionResult(success=False, error=str(e))
+
+    def _build_tool_summary(self, task: TaskNode) -> str:
+        """Build a summary of tool call results for context."""
+        if not task.tool_calls:
+            return ""
+
+        failed = [tc for tc in task.tool_calls if tc.result and not tc.result.get("success")]
+        if not failed:
+            return ""
+
+        lines = ["[Tool Call Summary]"]
+        lines.append(f"- FAILED: {', '.join(tc.name for tc in failed)}")
+        for tc in failed:
+            error = tc.result.get("error", "Unknown") if tc.result else "Unknown"
+            lines.append(f"  - {tc.name}: {error}")
+        return "\n".join(lines)
 
     def _build_task_prompt(self, task: TaskNode, dag: TaskDAG) -> str:
         """Build the prompt for a task, including dependency results."""
@@ -276,7 +322,13 @@ class DAGExecutor:
         for dep_id in task.depends_on:
             dep_task = dag.get_task(dep_id)
             if dep_task and dep_task.result:
-                dep_context.append(f"## Result from '{dep_task.name or dep_id}':\n{dep_task.result}")
+                # Include tool failure summary if the dependency had failures
+                tool_summary = self._build_tool_summary(dep_task) if dep_task.has_tool_failures else ""
+                context_text = f"## Result from '{dep_task.name or dep_id}':\n"
+                if tool_summary:
+                    context_text += f"{tool_summary}\n\n"
+                context_text += dep_task.result
+                dep_context.append(context_text)
             elif dep_task and dep_task.status == TaskStatus.SKIPPED:
                 dep_context.append(f"## Result from '{dep_task.name or dep_id}':\n[UNAVAILABLE - task was skipped]")
 
@@ -327,6 +379,19 @@ class DAGExecutor:
                     logger.info(f"Task {task.id} skipped due to failed dependency {failed_task_id}")
                     # Recursively skip dependents
                     self._mark_dependents_skipped(dag, task.id, skipped)
+
+    def _get_tasks_blocked_by_failures(self, dag: TaskDAG) -> list[TaskNode]:
+        """Get pending tasks blocked by dependencies with critical tool failures."""
+        failed_completion_ids = {
+            tid for tid, t in dag.tasks.items()
+            if t.status == TaskStatus.COMPLETED and t.has_tool_failures
+        }
+
+        return [
+            task for task in dag.tasks.values()
+            if task.status == TaskStatus.PENDING
+            and any(dep_id in failed_completion_ids for dep_id in task.depends_on)
+        ]
 
     async def resume_from_checkpoint(self, dag_id: str) -> dict[str, Any] | None:
         """
