@@ -10,8 +10,8 @@ from .models import TaskDAG, TaskNode, TaskStatus, DecompositionResult
 
 logger = logging.getLogger(__name__)
 
-DECOMPOSITION_SYSTEM_PROMPT = """You are a task decomposition engine. Given a user's question or task,
-break it down into smaller, independent sub-tasks that can be executed in parallel where possible.
+DECOMPOSITION_SYSTEM_PROMPT = """You are a task decomposition engine. Given a complex question,
+break it down into the MINIMUM number of sub-tasks needed.
 
 Return a JSON object with the following structure:
 {
@@ -28,12 +28,16 @@ Return a JSON object with the following structure:
 }
 
 Guidelines:
+- Create the FEWEST tasks possible while still allowing parallelization
+- Only create separate tasks when they are truly independent
+- Prefer 2-3 tasks over 4-6 when possible
+- A single task is acceptable if no parallelization benefit exists
+- Only decompose when there's clear benefit (parallel execution, distinct research areas)
 - Each task should be self-contained and focused on a single aspect
 - Use depends_on to specify task dependencies (tasks that must complete first)
 - Mark tasks as is_complex: true if they might benefit from further decomposition
 - Keep task IDs short and descriptive (e.g., "search_1", "calc_2")
 - The final_prompt should explain how to combine all results into a coherent answer
-- Aim for 2-6 sub-tasks for most questions
 - Tasks without dependencies can run in parallel"""
 
 COMPLEXITY_CHECK_PROMPT = """Analyze this task and determine if it's simple enough to execute directly,
@@ -58,16 +62,72 @@ Return a JSON object:
 If is_simple is true, sub_tasks should be an empty list.
 Only decompose if the task genuinely requires multiple distinct steps."""
 
+SIMPLICITY_CHECK_PROMPT = """Evaluate if this question/task is simple enough to answer directly,
+or if it requires decomposition into multiple sub-tasks.
+
+Question: {question}
+
+A question is SIMPLE if:
+- It's a straightforward factual question (e.g., "What is 2+2?", "Capital of France?")
+- It requires only one step to answer
+- It doesn't need research from multiple sources
+- It doesn't involve comparing/contrasting multiple items
+- It can be answered with tools in a single step
+
+A question is COMPLEX if:
+- It requires multiple distinct research steps
+- It involves analyzing/comparing multiple entities
+- It needs information from different domains
+- It has multiple parts that should be handled separately
+
+Return JSON:
+{{
+    "verdict": "SIMPLE" or "COMPLEX",
+    "reason": "Brief explanation",
+    "suggested_approach": "How to handle this question"
+}}
+"""
+
 
 class DecompositionEngine:
     """Decomposes complex questions into task DAGs."""
 
-    def __init__(self, llm: Any):
+    def __init__(self, llm: Any, skip_simplicity_check: bool = False):
         self.llm = llm
         self._max_decomposition_depth = 2
+        self._skip_simplicity_check = skip_simplicity_check
+
+    async def check_simplicity(self, question: str) -> bool:
+        """Check if a question is simple enough to execute directly.
+
+        Returns True if simple (no decomposition needed).
+        """
+        response = await self.llm.call_structured(
+            prompt=SIMPLICITY_CHECK_PROMPT.format(question=question),
+            response_format={"type": "json_object"},
+        )
+        return response.get("verdict", "SIMPLE").upper() == "SIMPLE"
 
     async def decompose_question(self, question: str) -> TaskDAG:
         """Decompose a user question into a task DAG."""
+        # Check if question is simple enough to execute directly
+        if not self._skip_simplicity_check:
+            is_simple = await self.check_simplicity(question)
+
+            if is_simple:
+                # Create single-task DAG for simple questions
+                dag = TaskDAG(user_question=question)
+                task = TaskNode(
+                    id="direct",
+                    name="Answer directly",
+                    prompt=question,
+                )
+                dag.add_task(task)
+                dag.final_prompt = "Provide the answer directly."
+                logger.info("Question is simple - executing directly without decomposition")
+                return dag
+
+        # For complex questions, proceed with decomposition
         prompt = f"Decompose this question into sub-tasks:\n\n{question}"
 
         response = await self.llm.call_structured(

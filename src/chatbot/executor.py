@@ -37,6 +37,7 @@ class ExecutionConfig:
     enable_tools: bool = True
     max_tool_calls_per_task: int = 30
     allowed_tools: list[str] | None = None  # None = all tools
+    skip_simplicity_check: bool = False  # Allow bypassing simplicity check for testing
 
 
 class DAGExecutor:
