@@ -3,7 +3,7 @@
 from .models import TaskNode, TaskDAG, TaskStatus, ToolCallRecord
 from .decomposition import DecompositionEngine
 from .executor import DAGExecutor, ExecutionConfig
-from .aggregator import ResultAggregator
+from .aggregator import ResultAggregator, AggregationResult
 from .checkpoint import CheckpointManager
 from .api import ChatbotAPI
 from .tools import (
@@ -32,6 +32,7 @@ __all__ = [
     "DAGExecutor",
     "ExecutionConfig",
     "ResultAggregator",
+    "AggregationResult",
     "CheckpointManager",
     "ChatbotAPI",
     "Tool",

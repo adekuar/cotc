@@ -20,12 +20,15 @@ class ChatResponse:
     """Response from the chatbot."""
 
     answer: str
-    status: str  # "complete" or "partial"
+    status: str  # "complete", "partial", or "needs_help"
     completion_rate: float
     failed_tasks: int
     skipped_tasks: int
     dag_id: str
     task_details: dict[str, Any] | None = None
+    needs_user_help: bool = False
+    help_request: str | None = None
+    failed_task_details: list[dict[str, Any]] | None = None
 
 
 class ChatbotAPI:
@@ -52,7 +55,10 @@ class ChatbotAPI:
             config=self.config,
             tool_registry=self.tool_registry,
         )
-        self.aggregator = ResultAggregator(self.llm)
+        self.aggregator = ResultAggregator(
+            self.llm,
+            ask_for_help_on_failure=self.config.ask_for_help_on_failure,
+        )
 
     async def ask(self, question: str, include_details: bool = False) -> ChatResponse:
         """Process a user question through the chatbot."""
@@ -63,7 +69,7 @@ class ChatbotAPI:
         execution_result = await self.executor.execute_dag(dag)
 
         # Aggregate results
-        answer = await self.aggregator.aggregate_results(dag)
+        aggregation_result = await self.aggregator.aggregate_results(dag)
 
         # Get summary
         summary = self.aggregator.get_partial_result_summary(dag)
@@ -73,14 +79,25 @@ class ChatbotAPI:
         if include_details:
             task_details = self._build_task_details(dag)
 
+        # Determine status
+        if aggregation_result.needs_user_help:
+            status = "needs_help"
+        elif summary["is_complete"]:
+            status = "complete"
+        else:
+            status = "partial"
+
         return ChatResponse(
-            answer=answer,
-            status="complete" if summary["is_complete"] else "partial",
+            answer=aggregation_result.help_request if aggregation_result.needs_user_help else aggregation_result.answer,
+            status=status,
             completion_rate=summary["completion_rate"],
             failed_tasks=summary["failed_tasks"],
             skipped_tasks=summary["skipped_tasks"],
             dag_id=dag.id,
             task_details=task_details,
+            needs_user_help=aggregation_result.needs_user_help,
+            help_request=aggregation_result.help_request,
+            failed_task_details=aggregation_result.failed_tasks,
         )
 
     async def resume(self, dag_id: str, include_details: bool = False) -> ChatResponse | None:
@@ -97,7 +114,7 @@ class ChatbotAPI:
         execution_result = await self.executor.execute_dag(dag)
 
         # Aggregate results
-        answer = await self.aggregator.aggregate_results(dag)
+        aggregation_result = await self.aggregator.aggregate_results(dag)
 
         # Get summary
         summary = self.aggregator.get_partial_result_summary(dag)
@@ -107,14 +124,25 @@ class ChatbotAPI:
         if include_details:
             task_details = self._build_task_details(dag)
 
+        # Determine status
+        if aggregation_result.needs_user_help:
+            status = "needs_help"
+        elif summary["is_complete"]:
+            status = "complete"
+        else:
+            status = "partial"
+
         return ChatResponse(
-            answer=answer,
-            status="complete" if summary["is_complete"] else "partial",
+            answer=aggregation_result.help_request if aggregation_result.needs_user_help else aggregation_result.answer,
+            status=status,
             completion_rate=summary["completion_rate"],
             failed_tasks=summary["failed_tasks"],
             skipped_tasks=summary["skipped_tasks"],
             dag_id=dag.id,
             task_details=task_details,
+            needs_user_help=aggregation_result.needs_user_help,
+            help_request=aggregation_result.help_request,
+            failed_task_details=aggregation_result.failed_tasks,
         )
 
     def _build_task_details(self, dag: TaskDAG) -> dict[str, Any]:

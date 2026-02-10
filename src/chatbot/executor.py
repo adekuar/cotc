@@ -38,6 +38,7 @@ class ExecutionConfig:
     max_tool_calls_per_task: int = 30
     allowed_tools: list[str] | None = None  # None = all tools
     skip_simplicity_check: bool = False  # Allow bypassing simplicity check for testing
+    ask_for_help_on_failure: bool = True  # Ask user for help when critical tasks fail
 
 
 class DAGExecutor:
@@ -172,6 +173,15 @@ class DAGExecutor:
                     "\n\nYou have access to tools that can help you complete tasks. "
                     "Use them when appropriate to gather information, perform calculations, "
                     "or interact with files."
+                    "\n\nWhen using the python_execute tool:"
+                    "\n- If the code requires external packages not in the standard library, first create "
+                    "a temporary virtual environment, install the required packages, and then run your code."
+                    "\n- Use subprocess to create and manage the virtual environment:"
+                    "\n  1. Create venv: subprocess.run(['python', '-m', 'venv', '/tmp/temp_venv'])"
+                    "\n  2. Install packages: subprocess.run(['/tmp/temp_venv/bin/pip', 'install', 'package_name'])"
+                    "\n  3. Run code: subprocess.run(['/tmp/temp_venv/bin/python', '-c', 'your_code'])"
+                    "\n- For simple calculations using only standard library, execute code directly without a venv."
+                    "\n- Always clean up temporary files and environments when done."
                 )
 
             tool_call_count = 0

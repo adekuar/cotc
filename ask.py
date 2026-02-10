@@ -142,10 +142,16 @@ async def ask(question: str):
     for task in details["tasks"]:
         print_task(task)
 
-    # Final answer
-    print_header("Final Answer")
-    print(response.answer)
-    print_separator("=")
+    # Final answer or help request
+    if response.needs_user_help:
+        print_header("Help Needed", char="!")
+        print(response.help_request)
+        print()
+        print_separator("!")
+    else:
+        print_header("Final Answer")
+        print(response.answer)
+        print_separator("=")
 
     return response
 

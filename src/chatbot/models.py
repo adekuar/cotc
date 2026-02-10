@@ -42,6 +42,27 @@ class TaskNode(BaseModel):
     retry_count: int = 0
     is_complex: bool = False
     tool_calls: list[ToolCallRecord] = Field(default_factory=list)
+    requires_data: bool = True  # Whether this task requires external data to be meaningful
+
+    def has_critical_tool_failures(self) -> bool:
+        """Check if this task has critical tool failures that prevent meaningful completion."""
+        if not self.tool_calls:
+            return False
+
+        # Count failed vs successful tool calls
+        failed_calls = [tc for tc in self.tool_calls if tc.result and not tc.result.get("success", False)]
+        successful_calls = [tc for tc in self.tool_calls if tc.result and tc.result.get("success", False)]
+
+        # If all tool calls failed, this is a critical failure
+        if failed_calls and not successful_calls:
+            return True
+
+        # If more than half of tool calls failed, consider it critical
+        total_calls = len(self.tool_calls)
+        if total_calls > 0 and len(failed_calls) / total_calls > 0.5:
+            return True
+
+        return False
 
     def reset_for_retry(self) -> None:
         """Reset task state for retry."""
@@ -109,6 +130,27 @@ class TaskDAG(BaseModel):
             "skipped": skipped,
             "completion_rate": completed / total if total > 0 else 0,
         }
+
+    def get_tasks_with_critical_failures(self) -> list[TaskNode]:
+        """Get list of tasks that have critical tool failures."""
+        return [
+            task for task in self.tasks.values()
+            if task.status == TaskStatus.COMPLETED and task.has_critical_tool_failures()
+        ]
+
+    def needs_user_help(self) -> bool:
+        """Check if the DAG execution needs user help due to critical failures."""
+        # Check for explicitly failed tasks
+        failed_tasks = [t for t in self.tasks.values() if t.status == TaskStatus.FAILED]
+        if failed_tasks:
+            return True
+
+        # Check for tasks with critical tool failures
+        critical_failures = self.get_tasks_with_critical_failures()
+        if critical_failures:
+            return True
+
+        return False
 
 
 class DecompositionResult(BaseModel):
